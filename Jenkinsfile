@@ -1,30 +1,36 @@
 pipeline {
-  //agent any
-  agent { node { label 'workstation' } }
-
-  environment {
-    TEST_URL = "google.com"
-  }
+  agent any
 
   stages {
-
     stage('Compile') {
       steps {
-        //echo 'Hello World'
-        //error 'This is an error'
-        echo TEST_URL
+        echo 'Hello World'
+      }
+    }
+
+    stage('Test') {
+      steps {
+        echo 'Hello World'
+      }
+    }
+
+    stage('Code Quality') {
+      steps {
+        echo 'Hello World'
+      }
+    }
+
+    stage('Code Security') {
+      steps {
+        echo 'Hello World'
+      }
+    }
+
+    stage('App Deploy') {
+      steps {
+        echo 'Hello World'
       }
     }
 
   }
-
-  post {
-    always {
-      echo 'Post'
-      // Send Email
-      // Trigger Some another Job
-      // Update some JIRA Status about the build.
-    }
-  }
-
 }
