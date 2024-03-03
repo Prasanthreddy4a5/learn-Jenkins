@@ -8,13 +8,13 @@ pipeline {
   stages {
     stage('Compile') {
       steps {
-        echo 'Hello World'
+        echo 'Hello World2'
       }
     }
 
-    stage('Test') {
+    stage('Test2') {
       steps {
-        echo 'Hello World'
+        echo 'Hello World2'
       }
     }
 
@@ -30,7 +30,7 @@ pipeline {
       }
     }
     
-    stage('App Deploy') {
+    stage('Test 2 App Deploy') {
       steps {
         echo 'Hello World'
       }
