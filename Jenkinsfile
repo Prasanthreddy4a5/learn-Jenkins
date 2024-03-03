@@ -4,7 +4,7 @@ pipeline {
 
   environment {
     TEST_URL = "google.com"
-    SSH = credentials("centos-ssh")
+    SSH = credentials("centos-SSH")
   }
 
   options {
